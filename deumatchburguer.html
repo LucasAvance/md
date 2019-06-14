@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="App Delivery Deu Match Burguer">
+    <meta name="keywords" content="MenuDino, Consumer, Cardápio Online, Cardápio Grátis, Pedido Online">
+    <title>Deu Match Burguer - Card&#225;pio Deu Match Burguer Caxias do Sul</title>
+    <!-- =============== VENDOR STYLES ===============-->
+    <link href="bundles/fontawesome7a25.css?v=2b0vUYXwx4iBQyAWABGIxLBT-Jb_6AZ07ereiz_hK0w1" rel="stylesheet" />
+
+    <link href="bundles/simpleLineIcons90fd.css?v=5boKqGGmJXxOpOqruBx_w_hslpUhKRku-NgzChNIl-s1" rel="stylesheet" />
+
+    <link href="bundles/animatecss4dfb.css?v=NFkh5fv6InVD2v9qOjki8JmAOZK-dxF1BYMjq1U7U4o1" rel="stylesheet" />
+
+
+    <!-- =============== BOOTSTRAP STYLES ===============-->
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" id="bscss" />
+    <!-- =============== APP STYLES ===============-->
+
+    <link href="Content/app.css" rel="stylesheet" type="text/css" id="maincss" />
+    <link href="Content/notify.css" rel="stylesheet" type="text/css" id="maincss" />
+    <link href="Content/app.custom.css" rel="stylesheet" type="text/css" />
+    <link href="Content/themes/theme-d.css" rel="stylesheet" type="text/css" />
+    <!-- =============== PAGE VENDOR STYLES =============== -->
+
+    <style>
+        body {
+            font-family: 'roboto';
+        }
+
+        .cardapio-header .icon {
+            background: none !important;
+            max-height: 110px;
+            width: 100%;
+        }
+
+        .cardapio-header .icon img {
+            border: none;
+        }
+
+        .cardapio-header h1 {
+            opacity: 0;
+        }
+
+        #cardapio .cardapio-header .bg {
+            background-image: url("http://deumatchburguer.com/wp-content/uploads/2018/09/burger2-home-slider-slide1.jpg");
+        }
+        
+        h3 a {
+            text-transform: capitalize;
+        }
+
+    </style>
+
+</head>
+
+<body class="layout-h layout-fixed">
+    <div class="wrapper">
+        <!-- top navbar-->
+        <header class="topnavbar-wrapper">
+            <!-- START Top Navbar-->
+            <nav class="navbar topnavbar">
+                <!-- START navbar header-->
+                <div class="navbar-header">
+                    <button type="button" data-toggle-state="aside-toggled" data-no-persist="true" class="navbar-toggle navbar-toggle-main">
+                        <span class="sr-only">Menu</span>
+                        <em class="fa fa-navicon text-white"></em>
+                    </button>
+                    <button type="button" data-cart-open="" class="navbar-toggle">
+                        <span class="sr-only">Carrinho</span>
+                        <em class="icon-basket text-white"></em>
+                        <span class="carrinho-label text-white"></span>
+                        <div class="badge badge-warning carrinho-qtd"></div>
+                    </button>
+
+                    <button type="button" data-search-open="" class="navbar-toggle">
+                        <span class="sr-only">Pesquisar</span>
+                        <em class="icon-magnifier text-white"></em>
+                    </button>
+
+                    <a href="deumatchburguer.html" class="navbar-brand hidden-xs">
+                        <div class="brand-logo">
+
+                            <img src="Content/Images/Cardapios/logo-75501.png" alt="Deu Match Burguer" class="img-responsive" />
+                        </div>
+                        <div class="brand-logo-collapsed">
+                            <img src="Content/Images/Cardapios/logo-75501.png" alt="Deu Match Burguer" class="img-responsive" />
+
+                        </div>
+                    </a>
+
+                    <span class="navbar-opcao-entrega" onclick="ShowAjaxModal('https://app.menudino.com/deumatchburguer/endereco/listarendereco', 'cepModal')" data-load="/home/_topnavbarentrega">
+                        teste
+                    </span>
+                </div>
+                <!-- END navbar header-->
+                <!-- START Nav wrapper-->
+                <div class="navbar-collapse collapse">
+                    <!-- START Left navbar-->
+
+                    <!-- END Left navbar-->
+                    <!-- START Right Navbar-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- START lock screen-->
+
+                        <!-- END lock screen-->
+                        <!-- Fullscreen (only desktops)-->
+
+                        <!-- Search icon-->
+                        <li class="hidden-xs">
+                            <a href="#" data-search-open="">
+                                <em class="icon-magnifier"></em>
+                            </a>
+                        </li>
+                        <!-- START Alert menu-->
+                        <li class="dropdown dropdown-list" id="carrinho">
+                            <a href="#" data-toggle="dropdown" class="hidden-xs">
+                                <em class="icon-basket"></em>
+                                <span class="carrinho-label"></span>
+                                <div class="badge badge-warning carrinho-qtd"></div>
+                            </a>
+                            <!-- START Dropdown menu-->
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <!-- START list group-->
+                                    <h4 class="text-center">Resumo do Pedido</h4>
+                                    <div class="list-group">
+                                        <table class="table" id="carrinho-itens"></table>
+                                    </div>
+                                    <div href="#" class="list-group-footer p-sm text-center">
+                                        <a class="btn btn-lg btn-block btn-square btn-success" data-toggle="modal" data-target="#pedidoModal"><i class="fa fa-whatsapp"></i> Enviar via WhatsApp</a>
+                                    </div>
+                                    <!-- END list group-->
+                                </li>
+                            </ul>
+                            <!-- END Dropdown menu-->
+                        </li>
+                        <!-- END Alert menu-->
+                        <li class="hidden-xs">
+                            <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="hidden-xs">
+                                <em class="fa fa-navicon"></em>
+                            </a>
+                        </li>
+                        <!-- START Contacts button-->
+
+                        <!-- END Contacts menu-->
+                    </ul>
+                    <!-- END Right Navbar-->
+                </div>
+                <!-- END Nav wrapper-->
+                <!-- START Search form-->
+                <form role="search" class="navbar-form">
+                    <div class="form-group has-feedback">
+                        <input id="search" name="search" type="text" placeholder="O que deseja pedir?" class="form-control" autocomplete="off" />
+                        <div data-search-dismiss="" class="fa fa-times form-control-feedback"></div>
+                    </div>
+                    <button type="button" class="hidden btn btn-default">Pesquisar</button>
+                </form>
+                <!-- END Search form-->
+            </nav>
+            <!-- END Top Navbar-->
+        </header>
+        <!-- sidebar-->
+        <aside class="aside preload">
+            <!-- START Sidebar (left)-->
+            <div class="aside-inner">
+                <nav class="sidebar">
+                    <!-- START sidebar nav-->
+                    <ul class="nav">
+                        <!-- START user info-->
+                        <!-- END user info-->
+                        <!-- Iterates over all sidebar items-->
+                        <li class="nav-heading">
+                            <span>Menu</span>
+                        </li>
+                        <li class="active">
+                            <a href="deumatchburguer.html" title="Cardápio">
+                                <em class="fa fa-cutlery"></em>
+                                <span>Cardápio</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://menudino.com/" title="Entrar">
+                                <em class="fa fa-wpforms"></em>
+                                <span>Pedidos</span>
+                            </a>
+                        </li>
+                        <li class="nav-heading">
+                            <span>Desenvolvido por</span>
+                        </li>
+                        <li>
+                            <img class="center-block img-responsive" src="Content/Images/logo-vermelha.png" alt="MenuDino" style="max-height: 60px" />
+                        </li>
+                    </ul>
+                    <!-- END sidebar nav-->
+                </nav>
+            </div>
+            <!-- END Sidebar (left)-->
+        </aside>
+        <!-- offsidebar-->
+
+        <!-- Main section-->
+        <section>
+            <!-- Page content-->
+            <div class="content-wrapper">
+
+
+
+
+                <div id="cardapio" class="content">
+                    <div class="container">
+                        <section class="cardapio-header">
+                            <div class="bg"></div>
+                            <div class="gradient"></div>
+                            <div class="inner">
+                                <div class="icon">
+                                    <img src="Content/Images/Cardapios/logo-75501.png" class="img-responsive" alt="Deu Match Burguer">
+                                </div>
+                                <h1>
+                                    Deu Match Burguer
+                                </h1>
+                                <h2>
+                                    <address>
+                                        <i class="fa fa-map-marker"></i>
+                                        Rua das Pitangueiras, 741, Caxias do Sul, RS
+                                    </address>
+                                    <input id="Estabelecimento_EndEstado" name="Estabelecimento.EndEstado" type="hidden" value="RS" />
+                                </h2>
+                                <div class="row mt mb">
+                                    <div class="col-xs-12 text-center">
+                                        <a href="#" class="label label-fechado" data-toggle="modal" data-target="#detalhesAtendimentoModal">
+                                            Fechado para pedidos
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row text-center text-white mb">
+                                    <div class="col-xs-12">
+                                        <a href="#" class="text-white" data-toggle="modal" data-target="#detalhesAtendimentoModal">
+                                            <i class="fa fa-clock-o"></i> <span class="tempoEstimadoSelected text-bold">45 a 90min</span>
+                                            -
+                                            Ver mais
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="cardapio-body">
+                            <input id="CobrarPeloMaiorValor" name="CobrarPeloMaiorValor" type="hidden" value="false" />
+                            <ul class="categories">
+                                <li>
+                                    <h3>
+                                        <a name="0 - Especiais">0 - Match do Dia</a>
+                                    </h3>
+                                    <ul class="products">
+                                        <!-- 
+-->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="30c707b2-c8f1-41e0-944c-ac9d991e371e" data-image="762/7" href="#" data-toggle="modal" data-target="#itemModal" data-name="Frango Frito" data-price="28,00" data-description="Daqueles que da para sentir a crocancia de longe!
+
+maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de frango empanado em farinha especial crocante, presunto e queijo, tudo isso dentro de um p&#227;o tradicional e gigant&#227;o.">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Frango frito</div>
+                                                        <div class="product-description">Daqueles que da para sentir a crocancia de longe!
+
+                                                            maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de frango empanado em farinha especial crocante, presunto e queijo, tudo isso dentro de um p&#227;o tradicional e gigant&#227;o.</div>
+                                                        <div class="price">28,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/7.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="c9e9f061-0e4a-4a9d-a17d-06320521f075" data-image="762/8" href="#" data-toggle="modal" data-target="#itemModal" data-name="Triplo Cheddar" data-price="30,00" data-description="P&#227;o, hamb&#250;rguer, hamb&#250;rguer de novo, mais um hamb&#250;rguer, picles (pepino em conserva), cheddar, + cheddar e muuuuito cheddar..">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Triplo cheddar</div>
+                                                        <div class="product-description">P&#227;o, hamb&#250;rguer, hamb&#250;rguer de novo, mais um hamb&#250;rguer, picles (pepino em conserva), cheddar, + cheddar e muuuuito cheddar..</div>
+                                                        <div class="price">30,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/8.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!--                                -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a name="1 - Barat&#227;o">1 - barat&#227;o</a>
+                                    </h3>
+                                    <ul class="products">
+                                        <!-- 
+-->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="57f2e2a9-36f6-47ba-8c3d-0b4460f65b57" data-image="762/87" href="#" data-toggle="modal" data-target="#itemModal" data-name="P&#227;o, Carne e Queijo" data-price="10,00" data-description="">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">P&#227;o, carne e queijo</div>
+                                                        <div class="product-description"></div>
+                                                        <div class="price">10,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/87.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="104fceaa-b0fb-45c6-ae99-49e4e776b92b" data-image="762/89" href="#" data-toggle="modal" data-target="#itemModal" data-name="Simples Bacon" data-price="10,00" data-description="">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Simples bacon</div>
+                                                        <div class="product-description"></div>
+                                                        <div class="price">10,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/89.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="27c048f0-9e8f-459f-ac9e-3819b630a15e" data-image="762/88" href="#" data-toggle="modal" data-target="#itemModal" data-name="Simples Cheddar" data-price="10,00" data-description="">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Simples cheddar</div>
+                                                        <div class="product-description"></div>
+                                                        <div class="price">10,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/88.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!--                                -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a name="2 - Lanches">2 - lanches</a>
+                                    </h3>
+                                    <ul class="products">
+                                        <!-- 
+-->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="bfc5536f-ae9b-4b56-885e-bf641d94d8ab" data-image="762/3" href="#" data-toggle="modal" data-target="#itemModal" data-name="Bacon" data-price="25,00" data-description="P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, queijo mussarela, presunto, ovo e muito bacon.">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Bacon</div>
+                                                        <div class="product-description">P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, queijo mussarela, presunto, ovo e muito bacon.</div>
+                                                        <div class="price">25,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/3.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="8466b2f5-35c6-49f8-a611-7d7046e2a39d" data-image="762/4" href="#" data-toggle="modal" data-target="#itemModal" data-name="Cora&#231;&#227;o" data-price="25,00" data-description="P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, queijo mussarela, presunto, ovo e cora&#231;&#227;o.">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Cora&#231;&#227;o</div>
+                                                        <div class="product-description">P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, queijo mussarela, presunto, ovo e cora&#231;&#227;o.</div>
+                                                        <div class="price">25,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/4.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="5dcf49d1-e802-4f2e-82b4-835e3f559bed" data-image="762/5" href="#" data-toggle="modal" data-target="#itemModal" data-name="Da Casa" data-price="16,00" data-description="P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, queijo mussarela, presunto e ovo.">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Da casa</div>
+                                                        <div class="product-description">P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, queijo mussarela, presunto e ovo.</div>
+                                                        <div class="price">16,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/5.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="beaef368-99a9-46f7-9a3c-5c5323897471" data-image="762/6" href="#" data-toggle="modal" data-target="#itemModal" data-name="Frango" data-price="20,00" data-description="P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, queijo mussarela, presunto, ovo e frango com molho especial (receita da casa).">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Frango</div>
+                                                        <div class="product-description">P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, queijo mussarela, presunto, ovo e frango com molho especial (receita da casa).</div>
+                                                        <div class="price">20,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/6.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="52f91284-cdef-4ff1-9ccc-c8ca4a152518" data-image="762/9" href="#" data-toggle="modal" data-target="#itemModal" data-name="Tudo" data-price="28,00" data-description="P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, cora&#231;&#227;o, bacon, frango, queijo mussarela, presunto e ovo.">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Tudo</div>
+                                                        <div class="product-description">P&#227;o, maionese, milho, ervilha, batata palha, alface, tomate, hamb&#250;rguer, cora&#231;&#227;o, bacon, frango, queijo mussarela, presunto e ovo.</div>
+                                                        <div class="price">28,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/9.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!--                                -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a name="3 - Molhos">3 - molhos</a>
+                                    </h3>
+                                    <ul class="products">
+                                        <!-- 
+-->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="f6ed3378-0af7-4cef-8000-180a588135b5" data-image="762/22" href="#" data-toggle="modal" data-target="#itemModal" data-name="Maionese Pote (Extra)" data-price="1,00" data-description="">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Maionese pote (extra)</div>
+                                                        <div class="product-description"></div>
+                                                        <div class="price">1,00</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!--                                -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a name="4 - Bebidas">4 - bebidas</a>
+                                    </h3>
+                                    <ul class="products">
+                                        <!-- 
+-->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="5b84e368-962a-4d99-879d-b0feaebce89b" data-image="762/16" href="#" data-toggle="modal" data-target="#itemModal" data-name="Coca-Cola 2L" data-price="10,00" data-description="">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Coca-cola 2l</div>
+                                                        <div class="product-description"></div>
+                                                        <div class="price">10,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/16.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <!--                                    <li>
+                                        -->
+                                            <a data-uuid="835e588e-4a81-48a9-b045-437c46b4ec76" data-image="762/18" href="#" data-toggle="modal" data-target="#itemModal" data-name="Fruki Guarana 2L" data-price="9,00" data-description="">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <div class="name">Fruki guarana 2l</div>
+                                                        <div class="product-description"></div>
+                                                        <div class="price">9,00</div>
+                                                    </div>
+                                                    <div class="media-right">
+                                                        <img src="Content/images/cardapios/762/18.jpg" class="imagem img-rounded">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!--                                -->
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="alert alert-default text-center hidden" id="notfound" role="alert">
+                                <i class="fa fa-frown-o"></i> Nenhum item relacionado!
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <!-- Page footer-->
+        <footer>
+
+
+            Desenvolvido por MenuDino &copy;
+
+        </footer>
+    </div>
+
+    <div class="modal fade" id="detalhesAtendimentoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 10px; top: 10px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="mb-xl">
+                        <h4 class="modal-title">Horários de Funcionamento</h4>
+                        <p class="bg-danger text-center">Fechado agora</p>
+
+                        <table>
+                            <tr>
+                                <td class="text-bold text-right pr">DOM</td>
+                                <td><time>19:00 às 23:59</time></td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold text-right pr">TER</td>
+                                <td><time>19:00 às 23:59</time></td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold text-right pr">QUA</td>
+                                <td><time>19:00 às 23:59</time></td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold text-right pr">QUI</td>
+                                <td><time>19:00 às 23:59</time></td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold text-right pr">SEX</td>
+                                <td><time>19:00 às 23:59</time></td>
+                            </tr>
+                            <tr>
+                                <td class="text-bold text-right pr">S&#193;B</td>
+                                <td><time>19:00 às 23:59</time></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="mb-xl">
+                        <h4 class="modal-title mt">Pagamento na Entrega</h4>
+                        <span class="label label-pagamento">Dinheiro</span>
+                        <h4 class="small">Cart&#227;o de Cr&#233;dito</h4>
+                        <span class="label label-pagamento">Banricompras</span>
+                        <span class="label label-pagamento">Outros</span>
+                        <h4 class="small">Cart&#227;o de D&#233;bito</h4>
+                        <span class="label label-pagamento">Banricompras</span>
+                        <span class="label label-pagamento">Outros</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-default">
+                        <span aria-hidden="true">&times; Fechar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-mobile-full modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 10px; top: 10px;">
+                        <span aria-hidden="true">&times; Fechar</span>
+                    </button>
+                    <div class="foto-container">
+                        <img id="itemModalImage" class="foto" src="#" alt="" onerror="this.style.display = 'none'" />
+                    </div>
+                    <h2 class="modal-title" id="itemModalTitle"></h2>
+                    <h3 class="modal-title " id="itemModalPrice"></h3>
+                    <p id="itemModalDescription" class="text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal-mobile-full modal fade" id="pedidoModal" tabindex="-1" role="dialog" aria-labelledby="itemModalTitle">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-mobile-full2 modal fade" id="cepModal" tabindex="-1" role="dialog">
+    </div>
+
+    <nav id="verCarrinho" class="navbar navbar-default navbar-fixed-bottom p-sm hide">
+        <a href="#" class="btn btn-lg btn-block btn-square btn-success text-bold" data-cart-open><i class="fa fa-cutlery"></i> Ver Carrinho</a>
+    </nav>
+    <!-- =============== VENDOR SCRIPTS ===============-->
+    <script src="bundles/modernizr0cf5?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <script src="bundles/jquery8d65?v=2u0aRenDpYxArEyILB59ETSCA2cfQkSMlxb6jbMBqf81"></script>
+
+    <script src="bundles/jqueryvalee3f?v=Y5qnWKdQZJPZEQVOaAk2KTKfggS3dvOMci7hC3ym3X41"></script>
+
+    <script src="bundles/jquerymask20ea?v=GZQZzTg0ThCPMe-Q7NqKuq3mAHAdCcgre8Y2TLtM2VU1"></script>
+
+    <script src="bundles/bootstrap4f60?v=lescQEuG5u4jd-GcVDBcbpUOSyTDIg0Kk9zHDX55GCw1"></script>
+
+    <script src="bundles/storage5bca?v=vMS255G3FBLglnjneHEjHYU6BZ29nXKyII6xwZNsCN41"></script>
+
+    <script src="bundles/animodbca?v=PNRfRgqPzhf1xESmcI7tlTGp65_aZtoC1EbaOrypSTo1"></script>
+
+
+    <!-- =============== APP SCRIPTS ===============-->
+    <script src="bundles/Anglecfdc?v=CCVUIJxUyOn4245Tbqv_kR24mYdVDfWA8jxHGqJsIfc1"></script>
+
+    <!-- =============== PAGE VENDOR SCRIPTS ===============-->
+
+    <script src="bundles/appCardapio9354?v=DEH7q9PKf4UGFFoT4VAFLzl4qrGb_DT8lGNln2i0nPE1"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('input[id*="cep"]').mask('99999-999');
+
+            $('input[id*="fone"]').mask('(99) 9999-9999?9', {
+                placeholder: " "
+            }).on('focusout', function(event) {
+                var target, phone, element;
+                target = (event.currentTarget) ? event.currentTarget : event.srcElement;
+                phone = target.value.replace(/\D/g, '');
+                element = $(target);
+                var re = new RegExp("^\\d{2,3}(0{8,9}|1{8,9}|2{8,9}|3{8,9}|4{8,9}|5{8,9}|6{8,9}|7{8,9}|8{8,9}|9{8,9})$");
+                if (!phone.match(re)) {
+                    element.unmask();
+                    if (phone.length > 10) {
+                        if (phone.substr(2, 1) != "9")
+                            element.val("");
+                        element.mask("(99) 99999-999?9", {
+                            placeholder: " "
+                        });
+                    } else {
+                        element.mask("(99) 9999-9999?9", {
+                            placeholder: " "
+                        });
+                    }
+                } else
+                    element.val(null);
+            });
+        });
+    </script>
+
+    <script>
+        function removeWord() {
+            var div = '.categories';
+            var word = /\d+ - /g;
+            div = typeof(div) == 'string' ? document.querySelector(div) : div;
+            div.innerHTML = div.innerHTML.replace(word, '');
+        }
+        removeWord();
+
+
+        (function($) {
+            $.fn.toTitleCase = function() {
+                return $(this).each(function() {
+                    var ignore = "e,o,no,com,ou,em,a,para".split(",");
+                    var theTitle = $(this).text();
+                    var split = theTitle.split(" ");
+
+                    for (var x = 0; x < split.length; x++) {
+                        if (x > 0) {
+                            if (ignore.indexOf(split[x].toLowerCase()) < 0) {
+                                split[x] = split[x].replace(/\w\S*/g, function(txt) {
+                                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                                });
+                            }
+                        } else {
+                            split[x] = split[x].replace(/\w\S*/g, function(txt) {
+                                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                            });
+                        }
+                    }
+                    title = split.join(" ");
+                    $(this).text(title);
+                });
+            };
+        })(jQuery);
+
+        $('.name').toTitleCase();
+    </script>
+</body>
+
+<!-- Mirrored from app.menudino.com/deumatchburguer by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Jun 2019 09:59:35 GMT -->
+
+</html>
