@@ -1,14 +1,13 @@
 /* Importação de Arquivos e Fontes */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('fonts/SulSans-Bold.woff2');
-@import url('fonts/SulSans-BoldItalic.woff2');
 @import url('fonts/SulSans-Light.woff2');
 @import url('fonts/SulSans-Medium.woff2');
 @import url('fonts/SulSans-Regular.woff2');
-
+@import url('fonts/SulSans-Bold.woff2');
+@import url('fonts/SulSans-BoldItalic.woff2');
 
 body {
-    font-family: "SulSans", sans-serif;
+    font-family:"SulSans", sans-serif;
     background-color: #fff;
 }
 
