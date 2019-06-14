@@ -1,5 +1,8 @@
+/* Importação de Arquivos e Fontes */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 .cardapio-header .icon {
