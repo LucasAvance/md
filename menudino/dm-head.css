@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fff;
 }
 
 .cardapio-header .icon {
@@ -25,4 +26,11 @@ body {
 
 h3 a {
     text-transform: capitalize;
+}
+
+.name {
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 500;
+    color: #3f3e3e;
 }
