@@ -29,8 +29,8 @@ h3 a {
 }
 
 .name {
-    font-size: 2rem;
-    line-height: 4rem;
-    font-weight: 500;
-    color: #3f3e3e;
+    font-size: 2rem !important;
+    line-height: 4rem !important;
+    font-weight: 500 !important;
+    color: #3f3e3e !important;
 }
