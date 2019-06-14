@@ -7,7 +7,7 @@
 @import url('fonts/SulSans-BoldItalic.woff2');
 
 body {
-    font-family:"SulSans", sans-serif;
+    font-family:"SulSans", sans-serif !important;
     background-color: #fff;
 }
 
