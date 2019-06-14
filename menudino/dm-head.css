@@ -1,11 +1,6 @@
 /* Importação de Arquivos e Fontes */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://cloob.com.br/menudino/fonts/SulSans-Light.woff2');
-@import url('https://cloob.com.br/menudino/fonts/SulSans-Medium.woff2');
-@import url('https://cloob.com.br/menudino/fonts/SulSans-Regular.woff2');
-@import url('https://cloob.com.br/menudino/fonts/SulSans-Bold.woff2');
-@import url('https://cloob.com.br/menudino/fonts/SulSans-BoldItalic.woff2');
-
+@import url('https://cloob.com.br/menudino/fonts/stylesheet.css');
 
 body {
     font-family:"SulSans", sans-serif !important;
