@@ -1,9 +1,9 @@
 /* Importação de Arquivos e Fontes */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://cloob.com.br/menudino/fonts/stylesheet.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
 
 body {
-    font-family:"SulSans", sans-serif !important;
+    font-family:"Montserrat", sans-serif !important;
     background-color: #fff;
 }
 
