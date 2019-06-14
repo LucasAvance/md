@@ -1,9 +1,8 @@
 /* Importação de Arquivos e Fontes */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-    font-family:"Montserrat", sans-serif !important;
     background-color: #fff;
 }
 
