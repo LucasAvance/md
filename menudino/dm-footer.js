@@ -6,6 +6,13 @@ function removeWord() {
 }
 removeWord();
 
+function addBadge() {
+    var div = '.categories';
+    var word = 'Promo |';
+    div = typeof (div) == 'string' ? document.querySelector(div) : div;
+    div.innerHTML = div.innerHTML.replace(word, '<span class="badge badge-success">PROMO</span>');
+}
+addBadge();
 
 (function ($) {
     $.fn.toTitleCase = function () {
