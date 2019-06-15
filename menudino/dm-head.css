@@ -37,6 +37,17 @@ body, .wrapper > section {
     padding-left: .5em;
 }
 
+#cardapio .products li .imagem {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#cardapio .media-right {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 h3 a {
     text-transform: capitalize;
     font-size: .6em;
