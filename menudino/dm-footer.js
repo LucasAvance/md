@@ -7,10 +7,10 @@ function removeWord() {
 removeWord();
 
 function addBadge() {
-    var div = '.categories';
-    var word = '<div class="name">Promo |';
+    var div = '.name';
+    var word = 'Promo |';
     div = typeof (div) == 'string' ? document.querySelector(div) : div;
-    div.innerHTML = div.innerHTML.replace(word, '<span class="badge badge-success">Promo</span><div class="name">');
+    div.innerHTML = div.innerHTML.replace(word, '<span class="badge badge-success">Promo</span>');
 }
 addBadge();
 
