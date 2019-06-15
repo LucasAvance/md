@@ -26,6 +26,12 @@ body, .wrapper > section {
     background-image: url("https://deumatchburguer.com/wp-content/uploads/2018/09/burger2-home-slider-slide1.jpg");
 }
 
+.cardapio-header .gradient {
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(20%,rgba(0,0,0,.4)),to(rgba(0,0,0,.8)));
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,.4) 20%,rgba(0,0,0,.8));
+    background-image: linear-gradient(180deg,rgba(0,0,0,.4) 20%,rgba(0,0,0,.8));
+}
+
 #cardapio .cardapio-body h3 {
     border: none;
 }
