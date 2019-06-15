@@ -55,6 +55,11 @@ h3 a {
     margin-block-end: 1em;
 }
 
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
 .price {
     font-size: 1em !important;
     color: #50a773 !important;
