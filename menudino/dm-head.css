@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://cloob.com.br/menudino/fonts/stylesheet.css');
 
-body {
+body, .wrapper > section {
     font-family: "SulSans", sans-serif;
     background-color: #fff;
 }
@@ -26,8 +26,14 @@ body {
     background-image: url("http://deumatchburguer.com/wp-content/uploads/2018/09/burger2-home-slider-slide1.jpg");
 }
 
+#cardapio .cardapio-body h3 {
+    border: none;
+}
+
 h3 a {
     text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
 .name {
