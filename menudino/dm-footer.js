@@ -10,7 +10,7 @@ function addBadge() {
     var div = '.categories';
     var word = '<div class="name">Promo |';
     div = typeof (div) == 'string' ? document.querySelector(div) : div;
-    div.innerHTML = div.innerHTML.replace(word, '<div class="name"><div class="teste">Promo</div>');
+    div.innerHTML = div.innerHTML.replace(word, '<div class="teste"><div class="name">Promo</div>');
 }
 addBadge();
 
