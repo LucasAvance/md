@@ -57,7 +57,7 @@ h3 a {
 
 .price {
     font-size: 1em !important;
-    color: #50a773;
+    color: #50a773 !important;
 }
 
 .price::before {
