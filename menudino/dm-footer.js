@@ -8,9 +8,9 @@ removeWord();
 
 function addBadge() {
     var div = '.media-body';
-    var word = 'class="name">Promo |';
+    var word = '<div class="name">Promo |';
     div = typeof (div) == 'string' ? document.querySelector(div) : div;
-    div.innerHTML = div.innerHTML.replace(word, 'class="name"><span class="badge badge-success">Promo</span>');
+    div.innerHTML = div.innerHTML.replace(word, '<span class="badge badge-success">Promo</span><div class="name">');
 }
 addBadge();
 
