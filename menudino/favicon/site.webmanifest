@@ -1,0 +1,37 @@
+{
+2		
+    "name": "Deu Match Burguer",
+3		
+    "short_name": "Deu Match Burguer",
+4		
+    "icons": [
+5		
+        {
+6		
+            "src": "/android-chrome-192x192.png?v=xQdKjJ6eRP",
+7		
+            "sizes": "192x192",
+8		
+            "type": "image/png"
+9		
+        },
+10		
+        {
+11		
+            "src": "/android-chrome-512x512.png?v=xQdKjJ6eRP",
+12		
+            "sizes": "512x512",
+13		
+            "type": "image/png"
+14		
+        }
+15		
+    ],
+16		
+    "theme_color": "#ffffff",
+17		
+    "background_color": "#ffffff",
+18		
+    "display": "standalone"
+19		
+}
