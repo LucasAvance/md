@@ -10,7 +10,7 @@ removeWord();
 
 /* Gambiarra - Correção do inicio das palavras */
 function removeWord2() {
-    var div = '.categories';
+    var div = '.cardapio-header';
     var word = '- Ver mais';
     div = typeof (div) == 'string' ? document.querySelector(div) : div;
     div.innerHTML = div.innerHTML.replace(word, '');
