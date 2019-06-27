@@ -7,6 +7,16 @@ function removeWord() {
 }
 removeWord();
 
+
+/* Gambiarra - Correção do inicio das palavras */
+function removeWord2() {
+    var div = '.categories';
+    var word = '- Ver mais';
+    div = typeof (div) == 'string' ? document.querySelector(div) : div;
+    div.innerHTML = div.innerHTML.replace(word, '');
+}
+removeWord2();
+
 /* Gambiarra - Converter Texto em Badge */
 function addBadge() {
     var div = '.media-body';
