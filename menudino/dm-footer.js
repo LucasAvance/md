@@ -7,15 +7,25 @@ function removeWord() {
 }
 removeWord();
 
-
-/* Gambiarra - Correção do inicio das palavras */
+/* Gambiarra - Apagar Ver Mais */
 function removeWord2() {
     var div = '.cardapio-header';
-    var word = '- Ver mais';
+    var word = 'Ver mais';
     div = typeof (div) == 'string' ? document.querySelector(div) : div;
     div.innerHTML = div.innerHTML.replace(word, '');
 }
 removeWord2();
+
+/* Gambiarra - Apagar Ver Mais */
+function removeWord3() {
+    var div = '.cardapio-header';
+    var word = '  -';
+    div = typeof (div) == 'string' ? document.querySelector(div) : div;
+    div.innerHTML = div.innerHTML.replace(word, '');
+}
+removeWord3();
+
+
 
 /* Gambiarra - Converter Texto em Badge */
 function addBadge() {
@@ -69,7 +79,7 @@ $("body").append('<div class="status_restaurante"></div>');
 $("footer").prepend('<span><a href="https://deumatchburguer.com/">Deu Match&reg; Burguer</span><br />');
 
 /* Inserção de Conteúdo - Informações Restaurante */
-$(".cardapio-body").prepend('<ul class="dm-infos"><li><h3>Endereço para retirada<a class="endereco"></a></h3></li><li><h3>Tempo de Entrega<a href="#" data-toggle="modal" data-target="#promoDeuMatch"><i class="fa fa-clock-o"></i> <span class="tempoentrega"></span></a></h3></li></ul>');
+$(".cardapio-body").prepend('<ul class="dm-infos"><li><h3>Endereço para retirada<a class="endereco"></a></h3></li><li><h3>Tempo de Entrega<a href="#" data-toggle="modal" data-target="#detalhesAtendimentoModal"><i class="fa fa-clock-o"></i> <span class="tempoentrega"></span></a></h3></li></ul>');
 
 
 
