@@ -84,14 +84,17 @@ body,
     text-align: center;
 }
 
-.status_restaurante .label-fechado {
+.status_restaurante .label-fechado,
+.status_restaurante .label-aberto {
     display: block;
     font-size: .9em;
     font-weight: 200;
     width: 100%;
 }
 
-.label-fechado {
+.label-fechado,
+.label-aberto
+{
     display: none;
 }
 
