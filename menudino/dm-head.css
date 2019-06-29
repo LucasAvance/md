@@ -24,11 +24,15 @@ body,
 
 .topnavbar
 {
-    background: none;
-    background-color: #fff;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     min-height: 67px;
+}
+
+.topnavbar,
+.topnavbar .navbar-header {
+    background: none;
+    background-color: #fff;
 }
 
 .topnavbar .navbar-nav > li > a,

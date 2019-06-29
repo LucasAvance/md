@@ -83,7 +83,6 @@ $(".cardapio-body").prepend('<ul class="dm-infos"><li><h3>Endereço para retirad
 
 
 
-
 /* Alteração de Localização - Endereço */
 $("address").clone().prependTo(".endereco");
 
