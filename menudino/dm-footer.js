@@ -72,6 +72,10 @@ $(window).on('load', function() {
     $('#promoDeuMatch').modal('show');
 });*/
 
+
+/* Inserção de Conteúdo - Logo Reduzido */
+$(".navbar-brand").prepend('<div class="brand-logo-t"><img src="/menudino/images/logo-color-t.png" alt="Deu Match Burguer" class="img-responsive"></div>');
+
 /* Inserção de Conteúdo - Body */
 $("body").append('<div class="status_restaurante"></div>');
 
