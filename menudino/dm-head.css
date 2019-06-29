@@ -13,6 +13,23 @@ body,
 }
 
 
+/* Barra Superior */
+.topnavbar,
+.topnavbar .navbar-header
+{
+    background: none;;
+}
+
+.topnavbar .navbar-nav > li > a,
+.topnavbar .navbar-nav > .open > a,
+.navbar-opcao-entrega,
+.topnavbar .fa-navicon,
+.topnavbar .icon-basket,
+.topnavbar .icon-magnifier {
+    color: #3e3e3e !important;
+}
+
+
 /* Topo */
 .cardapio-header .icon {
     background: none !important;
