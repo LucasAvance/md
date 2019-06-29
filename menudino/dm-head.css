@@ -22,10 +22,13 @@ body,
     content: url(/menudino/images/logo-color.png);
 }
 
-.topnavbar,
-.topnavbar .navbar-header
+.topnavbar
 {
-    background: none;;
+    background: none;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    min-height: 67px;
 }
 
 .topnavbar .navbar-nav > li > a,
