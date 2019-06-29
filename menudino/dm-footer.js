@@ -26,6 +26,15 @@ function removeWord3() {
 removeWord3();
 
 
+/* Gambiarra - Apagar Ver Mais */
+function removeWord4() {
+    var div = '.navbar-header';
+    var word = 'navbar-brand hidden-xs';
+    div = typeof (div) == 'string' ? document.querySelector(div) : div;
+    div.innerHTML = div.innerHTML.replace(word, 'navbar-brand');
+}
+removeWord4();
+
 
 /* Gambiarra - Converter Texto em Badge */
 function addBadge() {

@@ -23,12 +23,33 @@ body,
 }
 
 .brand-logo-t {
-    display: block;
+    display: none;
 }
 
-.topnavbar
-{
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,.04);
+.brand-logo-t {
+    padding: 10px 10px 10px 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .brand-logo-t {
+        display: block;
+        -webkit-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+    .brand-logo-t img {
+        max-height: 48px;
+    }
+
+    .brand-logo,
+    .brand-logo-collapsed {
+        display: none !important;
+    }
+}
+
+.topnavbar {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .04);
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     min-height: 67px;
 }
@@ -111,7 +132,7 @@ body,
 
 /* Status Restaurante */
 .status_restaurante {
-    position:fixed;
+    position: fixed;
     bottom: 0;
     z-index: 1000;
     font-weight: 100;
@@ -129,8 +150,7 @@ body,
 }
 
 .label-fechado,
-.label-aberto
-{
+.label-aberto {
     display: none;
 }
 
@@ -218,7 +238,7 @@ h3 a {
 
 .modal-promo .modal-content {
 
-    border:  transparent;
+    border: transparent;
     border-style: none;
 }
 
