@@ -234,6 +234,12 @@ h3 a {
 
 
 /* Modal Lanche */
+
+.text-success {
+    color: #00966A !important;
+}
+
+
 .modal-body {
     padding: 0;
 }
@@ -247,13 +253,76 @@ h3 a {
     width: 100%;
 }
 
+@media only screen and (max-width: 767px){
+
+}
+
 @media only screen and (max-width: 767px) {
+    .modal-mobile-full .modal-body {
+        margin-bottom: 82px;
+    }
     .modal-mobile-full #produtoModalImagePath {
         max-height: 100%;
         max-width: 100%;
     }
+    .modal-footer {
+        background: #00966A !important;
+    }
+
 }
 
+.modal-mobile-full .modal-footer {
+    min-height: 0;
+}
+
+.modal-footer .btn {
+    font-weight: bold;
+    background: #f47134;
+    font-weight: 100;
+}
+
+.modal-footer .btn-lg {
+    font-size: 20px
+}
+
+.modal-footer .input-quantidade {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.modal-footer .btn-quantidade{
+    font-size: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    height: 45px;;
+}
+
+.modal-footer .btn-plus,
+.modal-footer .btn-minus {
+    color: #ea1d2c;
+}
+
+.modal-footer .form-quantidade {
+    padding: 0;
+    height: 45px;
+    border: none;
+    margin: 0;
+}
+
+.modal-footer .form-group {
+    margin-bottom: 0;
+}
+
+.panel-danger > .panel-heading {
+    background-color: #f2f2f2;
+    color: #3f3e3e;
+}
+
+.panel-title {
+    font-size: 16px;
+    font-weight: 300;
+}
 
 
 /* Modal Promo */
@@ -311,4 +380,3 @@ h3 a {
         margin-bottom: 100px;
     }
 }
-
