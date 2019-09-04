@@ -107,3 +107,9 @@ $(".label-fechado").clone().prependTo(".status_restaurante");
 
 /* Alteração de Localização - Status Aberto */
 $(".label-aberto").clone().prependTo(".status_restaurante");
+
+
+/* Modal Lanches 8/
+
+/*Inserção de Conteúdo - Header */
+$(".modal-header").replaceWith('<div class="modal-header"><button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p></div>');

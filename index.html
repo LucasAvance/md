@@ -624,23 +624,181 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
     <div class="modal-mobile-full modal fade in" id="testeModal" tabindex="-1" role="dialog" aria-labelledby="itemModalTitle">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button>
+                    <p class="pedido-titulo">Detalhes do Pedido</p>
+                </div>
 
-                    <div class="modal-body">
-                            <div class="col-xs-6">
-                                <button type="button" class="btn btn-block btn-square btn-default" data-dismiss="modal"><i class="fa fa-arrow-left"></i><br>Voltar</button>
-                            </div>
+                <div class="modal-body">
+
                     <div class="capa-lanche">
                         <img id="produtoModalImagePath" src="/Content/images/cardapios/762/7.jpg" alt="Foto" class="img-responsive center-block">
                     </div>
+
+                    <div id="etapa1">
+                        <div class="row">
+                            <div class="col-xs-12">
+
+                                <div class="panel-body text-justify">
+                                    <h3 class="modal-title product-title">
+                                        <span id="PrecoTotal" class="text-success pull-right product-price">28,00</span>
+                                        <span id="produtoModalNome">Frango Frito</span>
+                                    </h3>
+                                    <p id="produtoModalDescricao" class="product-description">
+                                        Daqueles que da para sentir a crocancia de longe!
+
+                                        maionese especial, milho, ervilha, palha, alface, tomate, hambúrguer de frango empanado em farinha especial crocante, presunto e queijo, tudo isso dentro de um pão tradicional e gigantão.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <input data-val="true" data-val-required="O campo CodigoGuid é obrigatório." id="Produto_CodigoGuid" name="Produto.CodigoGuid" type="hidden" value="30c707b2-c8f1-41e0-944c-ac9d991e371e">
+                        <input data-val="true" data-val-number="O campo CodigoProduto deve ser um número." data-val-required="O campo CodigoProduto é obrigatório." id="Produto_CodigoProduto" name="Produto.CodigoProduto" type="hidden" value="7">
+                        <input data-val="true" data-val-number="O campo ValorVenda deve ser um número." data-val-required="O campo ValorVenda é obrigatório." id="Produto_ValorVenda" name="Produto.ValorVenda" type="hidden" value="28,00">
+                        <input id="Produto_NomeProduto" name="Produto.NomeProduto" type="hidden" value="Frango Frito">
+                        <input id="Produto_NomePersonalizado" name="Produto.NomePersonalizado" type="hidden" value="">
+
+                        <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group mt-sm">
+                            <div class="panel panel-danger">
+                                <div id="headingTwo" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed btn-block">Adicionais <span class="collapse-icon pull-right"><i class="fa fa-chevron-up"></i><i class="fa fa-chevron-down"></i></span></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                    <div class="panel-body">
+                                        <input type="hidden" name="ComplementosSelecionados[0].Produto.Codigo" value="230723">
+                                        <div style="line-height: 35px;" class="pb pt">
+                                            <div class="pull-right" style="width: 135px">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-minus">
+                                                            <span class="fa fa-minus text-danger"></span>
+                                                        </button>
+                                                    </span>
+                                                    <input type="number" class="form-control text-center" name="ComplementosSelecionados[0].Quantidade" id="com-230723" data-nome="Bacon" data-precovenda="5.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-plus">
+                                                            <span class="fa fa-plus text-success"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            Bacon (5,00)
+                                        </div>
+                                        <input type="hidden" name="ComplementosSelecionados[1].Produto.Codigo" value="303420">
+                                        <div style="line-height: 35px;" class="pb pt">
+                                            <div class="pull-right" style="width: 135px">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-minus">
+                                                            <span class="fa fa-minus text-danger"></span>
+                                                        </button>
+                                                    </span>
+                                                    <input type="number" class="form-control text-center" name="ComplementosSelecionados[1].Quantidade" id="com-303420" data-nome="Cebola" data-precovenda="2.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-plus">
+                                                            <span class="fa fa-plus text-success"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            Cebola (2,00)
+                                        </div>
+                                        <input type="hidden" name="ComplementosSelecionados[2].Produto.Codigo" value="230724">
+                                        <div style="line-height: 35px;" class="pb pt">
+                                            <div class="pull-right" style="width: 135px">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-minus">
+                                                            <span class="fa fa-minus text-danger"></span>
+                                                        </button>
+                                                    </span>
+                                                    <input type="number" class="form-control text-center" name="ComplementosSelecionados[2].Quantidade" id="com-230724" data-nome="Cheddar" data-precovenda="3.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-plus">
+                                                            <span class="fa fa-plus text-success"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            Cheddar (3,00)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-danger">
+                                <div id="headingObs" role="tab" class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseObs" aria-expanded="true" aria-controls="collapseObs" class="btn-block">Observações <span class="collapse-icon pull-right"><i class="fa fa-chevron-up"></i><i class="fa fa-chevron-down"></i></span></a>
+                                    </h4>
+                                </div>
+                                <div id="collapseObs" role="tabpanel" aria-labelledby="headingObs" class="panel-collapse collapse in" aria-expanded="true">
+                                    <div class="panel-body">
+                                        <textarea class="form-control" cols="20" id="Observacoes" name="Observacoes" placeholder="Exemplo: sem cebola, bem passado, cortar ao meio" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-promo modal-footer">
+                    <div class="row">
+                        <div class="col-xs-4 text-center">
+                            <div class="form-group">
+                                <div class="input-group input-group-lg input-quantidade">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn-sm btn-minus btn-quantidade">
+                                            <span class="fa fa-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input class="form-control text-center form-quantidade" data-val="true" data-val-number="O campo deve ser um número." id="Quantidade" name="Quantidade" type="number" value="1" aria-describedby="Quantidade-error" aria-invalid="false" data-val-range-min="1" data-val-range-max="99" data-val-range="">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn-sm btn-plus btn-quantidade">
+                                            <span class="fa fa-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <span class="field-validation-valid text-danger" data-valmsg-for="Quantidade" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-8">
+
+                            <button type="submit" id="btnItemSubmit" class="btn btn-lg btn-block btn-square btn-success"><span>Adicionar</span></button>
+                        </div>
+                        <div class="col-xs-12 text-center m-sm">
+                            <small class="label label-fechado">Fechado para pedidos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Item -->
+    <div class="modal-mobile-full modal fade in" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalTitle" style="display: block; padding-left: 0px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="/pedido/cardapioitem/30c707b2-c8f1-41e0-944c-ac9d991e371e" data-ajax="true" data-ajax-begin="OnBeginAdd" data-ajax-method="POST" data-ajax-success="OnSuccessAdd" id="form0" method="post" novalidate="novalidate">
+                    <div class="modal-header">
+
+                        <h3 class="modal-title product-title">
+                            <span id="PrecoTotal" class="text-success pull-right product-price">28,00</span>
+                            <span id="produtoModalNome">Frango Frito</span>
+                        </h3>
+                        <p class="small mb0 hide" style="line-height: 1.2" id="resumo"></p>
+                    </div>
+                    <div class="modal-body" style="padding-top: 82px;">
                         <div id="etapa1">
                             <div class="row">
                                 <div class="col-xs-12">
-
+                                    <img id="produtoModalImagePath" src="/Content/images/cardapios/762/7.jpg" alt="Foto" class="img-responsive img-rounded center-block">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
                                     <div class="panel-body text-justify">
-                                        <h3 class="modal-title product-title">
-                                            <span id="PrecoTotal" class="text-success pull-right product-price">28,00</span>
-                                            <span id="produtoModalNome">Frango Frito</span>
-                                        </h3>
                                         <p id="produtoModalDescricao" class="product-description">
                                             Daqueles que da para sentir a crocancia de longe!
 
@@ -721,6 +879,177 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
                                                 </div>
                                                 Cheddar (3,00)
                                             </div>
+                                            <input type="hidden" name="ComplementosSelecionados[3].Produto.Codigo" value="230725">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[3].Quantidade" id="com-230725" data-nome="Coração" data-precovenda="5.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Coração (5,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[4].Produto.Codigo" value="230726">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[4].Quantidade" id="com-230726" data-nome="Ervilha" data-precovenda="2.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Ervilha (2,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[5].Produto.Codigo" value="230727">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[5].Quantidade" id="com-230727" data-nome="Frango" data-precovenda="5.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Frango (5,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[6].Produto.Codigo" value="230728">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[6].Quantidade" id="com-230728" data-nome="Hamburguer" data-precovenda="5.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Hamburguer (5,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[7].Produto.Codigo" value="230729">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[7].Quantidade" id="com-230729" data-nome="Milho" data-precovenda="2.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Milho (2,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[8].Produto.Codigo" value="230730">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[8].Quantidade" id="com-230730" data-nome="Palha" data-precovenda="2.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Palha (2,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[9].Produto.Codigo" value="385363">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[9].Quantidade" id="com-385363" data-nome="Pepino" data-precovenda="2.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Pepino (2,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[10].Produto.Codigo" value="230731">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[10].Quantidade" id="com-230731" data-nome="Presunto" data-precovenda="2.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Presunto (2,00)
+                                            </div>
+                                            <input type="hidden" name="ComplementosSelecionados[11].Produto.Codigo" value="85265">
+                                            <div style="line-height: 35px;" class="pb pt">
+                                                <div class="pull-right" style="width: 135px">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-minus">
+                                                                <span class="fa fa-minus text-danger"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="number" class="form-control text-center" name="ComplementosSelecionados[11].Quantidade" id="com-85265" data-nome="Queijo" data-precovenda="3.00" value="0" data-val-range-min="0" data-val-range-max="99">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-default btn-plus">
+                                                                <span class="fa fa-plus text-success"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                Queijo (3,00)
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -738,20 +1067,23 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
                                 </div>
                             </div>
                         </div>
+                        <div id="etapa2" style="display: none;">
+
+                        </div>
                     </div>
-                    <div class="modal-promo modal-footer">
+                    <div class="modal-footer">
                         <div class="row">
-                            <div class="col-xs-4 text-center">
+                            <div class="col-xs-12 text-center">
                                 <div class="form-group">
                                     <div class="input-group input-group-lg">
                                         <span class="input-group-btn">
-                                            <button type="button" class="btn-sm btn-minus btn-quantidade">
+                                            <button type="button" class="btn btn-default btn-minus">
                                                 <span class="fa fa-minus"></span>
                                             </button>
                                         </span>
                                         <input class="form-control text-center" data-val="true" data-val-number="O campo deve ser um número." id="Quantidade" name="Quantidade" type="number" value="1" aria-describedby="Quantidade-error" aria-invalid="false" data-val-range-min="1" data-val-range-max="99" data-val-range="">
                                         <span class="input-group-btn">
-                                            <button type="button" class="btn-sm btn-plus btn-quantidade">
+                                            <button type="button" class="btn btn-default btn-plus">
                                                 <span class="fa fa-plus"></span>
                                             </button>
                                         </span>
@@ -760,19 +1092,22 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
                                 </div>
                             </div>
 
-                            <div class="col-xs-8">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-lg btn-block btn-square btn-default" data-dismiss="modal"><i class="fa fa-arrow-left"></i><br>Voltar</button>
+                            </div>
+                            <div class="col-xs-6">
 
-                                <button type="submit" id="btnItemSubmit" class="btn btn-lg btn-block btn-square btn-success"><span>Adicionar</span></button>
+                                <button type="submit" id="btnItemSubmit" class="btn btn-lg btn-block btn-square btn-success" disabled="''"><i class="fa fa-plus"></i><br><span>Adicionar</span></button>
                             </div>
                             <div class="col-xs-12 text-center m-sm">
                                 <small class="label label-fechado">Fechado para pedidos</small>
                             </div>
                         </div>
                     </div>
+                </form>
             </div>
         </div>
     </div>
-
     <div class="modal-mobile-full2 modal fade" id="cepModal" tabindex="-1" role="dialog">
     </div>
 
@@ -854,6 +1189,10 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
         });
     </script>
 
+    <script>
+        /* Inserção de Conteúdo - Body */
+        $(".modal-header").replaceWith('<div class="modal-header"><button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p></div>');
+    </script>
     <script src="menudino/dm-footer.js"></script>
 </body>
 
