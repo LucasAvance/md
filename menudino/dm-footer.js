@@ -109,9 +109,9 @@ $(".label-fechado").clone().prependTo(".status_restaurante");
 $(".label-aberto").clone().prependTo(".status_restaurante");
 
 
-/* Modal Lanches 8/
+/* Modal Lanches */
 
 /*Inserção de Conteúdo - Header */
-$(document).on('change', '.modal-content', function() {
-  alert('teste');
-});
+        $("#testeModal").on("show.bs.modal", function (n) {
+            console.log('teste');
+        });
