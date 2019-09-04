@@ -234,6 +234,10 @@ h3 a {
 
 
 /* Modal Lanche */
+.modal-body {
+    padding: 0;
+}
+
 .modal-content {
     border: transparent;
     border-style: none;
@@ -243,12 +247,14 @@ h3 a {
     width: 100%;
 }
 
-
 @media only screen and (max-width: 767px) {
-    .modal-mobile-full .modal-body {
-        position: relative !important;
+    .modal-mobile-full #produtoModalImagePath {
+        max-height: 100%;
+        max-width: 100%;
     }
 }
+
+
 
 /* Modal Promo */
 
