@@ -112,6 +112,8 @@ $(".label-aberto").clone().prependTo(".status_restaurante");
 /* Modal Lanches */
 
 /*Inserção de Conteúdo - Header */
-        $("#itemModal").on("show.bs.modal", function (n) {
-            console.log('teste');
-        });
+$("#itemModal").on("show.bs.modal", function (n) {
+    /* Inserção de Conteúdo - Body */
+    $(".modal-header").append('<span style="display:none">Funcionou</span>');
+    console.log('funcionou');
+});
