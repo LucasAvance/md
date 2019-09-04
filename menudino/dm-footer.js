@@ -113,7 +113,7 @@ $(".label-aberto").clone().prependTo(".status_restaurante");
 
 /*Inserção de Conteúdo - Header */
 $("#itemModal").on("show.bs.modal", function (n) {
-    /* Inserção de Conteúdo - Body */
-    $(".modal-header").append('<span style="display:none">Funcionou</span>');
+    /* Inserção de Conteúdo - Body */]
+    setTimeout( $(".modal-header").append('<span style="display:none">Funcionou</span>'), 1000);
     console.log('funcionou');
 });
