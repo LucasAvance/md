@@ -13,7 +13,7 @@ function OnSuccessAdd(n) {
 }
 
 function atualizarCarrinho() {
-    $("#carrinho").append(globalSpinner).load("/pedido/carrinho?resume=true", function () {
+    $("#carrinho").append(globalSpinner).load("https://app.menudino.com.br/pedido/carrinho?resume=true", function () {
         $.validator.unobtrusive.parse(this);
         $("[data-cart-open]").html($("#carrinho a").html());
         $("<span> Ver Pedido<\/span>").insertAfter("#verCarrinho a em");
@@ -22,7 +22,7 @@ function atualizarCarrinho() {
         });
         $("#verCarrinho").toggleClass("hide", !(Number($(".carrinho-qtd").html()) > 0))
     });
-    $("#pedidoModal .modal-content").append(globalSpinner).load("/pedido/carrinho", function () {
+    $("#pedidoModal .modal-content").append(globalSpinner).load("https://app.menudino.com.br/pedido/carrinho", function () {
         $.validator.unobtrusive.parse(this)
     });
     $("[data-load]").each(function () {
@@ -141,7 +141,7 @@ $(document).ready(function () {
     });
     $("#itemModal").on("show.bs.modal", function (n) {
         var t, i;
-        $clickPendente ? ($clickPendente.trigger("click"), $clickPendente = null) : (t = $(n.relatedTarget), uuidClicado = t.data("uuid"), $("#itemModal .modal-content").html(""), i = $(globalSpinner), i.appendTo("#itemModal .modal-content"), $("#itemModal .modal-content").load("/pedido/cardapioitem/" + uuidClicado, function () {
+        $clickPendente ? ($clickPendente.trigger("click"), $clickPendente = null) : (t = $(n.relatedTarget), uuidClicado = t.data("uuid"), $("#itemModal .modal-content").html(""), i = $(globalSpinner), i.appendTo("#itemModal .modal-content"), $("#itemModal .modal-content").load("https://app.menudino.com.br/pedido/cardapioitem/" + uuidClicado, function () {
             if ($.validator.unobtrusive.parse(this), window.matchMedia("(max-width: 767px)").matches) {
                 var n = $("#itemModal .modal-header").outerHeight(!0) || 67;
                 $("#itemModal .modal-body").css("padding-top", n + 15 + "px")
@@ -240,7 +240,7 @@ $(document).ready(function () {
         n.preventDefault();
         n.stopPropagation();
         var t = $(this).closest("tr");
-        $.post("/pedido/delitem", {
+        $.post("https://app.menudino.com.br/pedido/delitem", {
             codigoPedidoItem: $(this).data("id")
         }, function (n) {
             $.notify("<i class='fa fa-" + n.icon + "'><\/i> " + n.message);
@@ -253,7 +253,7 @@ $(document).ready(function () {
     $(document).on("click", ".btnRemoverTodos", function (n) {
         n.preventDefault();
         n.stopPropagation();
-        $.post("/pedido/delallitem", null, function (n) {
+        $.post("https://app.menudino.com.br/pedido/delallitem", null, function (n) {
             $.notify("<i class='fa fa-" + n.icon + "'><\/i> " + n.message);
             atualizarCarrinho()
         })
@@ -262,7 +262,7 @@ $(document).ready(function () {
         if (n.preventDefault(), n.stopPropagation(), $(this).hasClass("active")) $("#cepModal").modal("hide");
         else {
             var t = $(this).data("id");
-            t === 1 ? ShowAjaxModal("/endereco/buscarcep", "cepModal") : $.post("/pedido/definirretirarnoestabelecimento", {
+            t === 1 ? ShowAjaxModal("/endereco/buscarcep", "cepModal") : $.post("https://app.menudino.com.br/pedido/definirretirarnoestabelecimento", {
                 codigoTipoEntrega: t
             }, function (n) {
                 $("#cepModal").modal("hide");

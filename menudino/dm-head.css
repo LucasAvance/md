@@ -233,18 +233,29 @@ h3 a {
 }
 
 
+/* Modal Lanche */
+.modal-content {
+    border: transparent;
+    border-style: none;
+}
+
+.capa-lanche {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .modal-mobile-full .modal-body {
+        position: relative !important;
+    }
+}
+
 /* Modal Promo */
 
 .modal-promo.modal {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     background: #00000080;
-}
-
-.modal-promo .modal-content {
-
-    border: transparent;
-    border-style: none;
 }
 
 .modal-promo .modal-header {
@@ -294,3 +305,4 @@ h3 a {
         margin-bottom: 100px;
     }
 }
+
