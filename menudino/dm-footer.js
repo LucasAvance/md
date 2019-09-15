@@ -117,6 +117,9 @@ $("#itemModal").on("show.bs.modal", function (n) {
     $(document).ajaxComplete(function () {
         console.log('Teste Funcioando');
 
+        // Inserir Título
+        $(".modal-title .product-title").prependTo(".panel-body .text-justify");
+
         // Remover Título e Colocar Menu Superior
         $(".modal-header").empty().append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
 
@@ -124,8 +127,6 @@ $("#itemModal").on("show.bs.modal", function (n) {
         $(".modal-body").prepend('<div class="capa-lanche"></div>');
         $("#produtoModalImagePath").prependTo(".capa-lanche");
 
-        // Inserir Título
-        $(".modal-title .product-title").prependTo(".panel-body .text-justify");
     })
 });
 
