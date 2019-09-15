@@ -122,6 +122,8 @@ $(".modal-header").append('<span style="display:none">Funcionou</span>');
 $("#itemModal").on("show.bs.modal", function (n) {
 	$( document ).ajaxComplete(function() {
     	console.log('Teste Funcionou AEEOOAEOOA');
+
+$(".modal-header").append('<span style="display:none">Funcionou</span>');
 })
 });
 
