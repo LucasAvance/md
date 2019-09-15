@@ -112,19 +112,17 @@ $(".label-aberto").clone().prependTo(".status_restaurante");
 /* Modal Lanches */
 
 /*Inserção de Conteúdo - Header */
-$("#itemModal").on("show.bs.modal", function (n) {
-    /* Inserção de Conteúdo - Body */
-$(".modal-header").append('<span style="display:none">Funcionou</span>');
-    console.log('funcionou');
-});
-
 
 $("#itemModal").on("show.bs.modal", function (n) {
     $(document).ajaxComplete(function () {
-        console.log('Teste Funcionou AEEOOAEOOA');
+        console.log('Teste Funcioando');
 
-
+        // Remover Título e Colocar Menu Superior
         $(".modal-header").empty().append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
+
+        // Inserir Imagem no topo
+        $(".modal-body").prepend('<div class="capa-lanche"></div>')
+        $("produtoModalImagePath").clone().prependTo(".capa-lanche");
     })
 });
 
