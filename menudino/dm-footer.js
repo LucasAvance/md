@@ -124,7 +124,7 @@ $("#itemModal").on("show.bs.modal", function (n) {
         console.log('Teste Funcionou AEEOOAEOOA');
 
 
-        document.getElementsByClassName("modal-header").innerHTML='<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>';
+        $(".modal-header").empty().append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
     })
 });
 
