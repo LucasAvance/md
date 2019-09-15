@@ -121,8 +121,11 @@ $("#itemModal").on("show.bs.modal", function (n) {
         $(".modal-header").empty().append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
 
         // Inserir Imagem no topo
-        $(".modal-body").prepend('<div class="capa-lanche"></div>')
-        $("produtoModalImagePath").clone().prependTo(".capa-lanche");
+        $(".modal-body").prepend('<div class="capa-lanche"></div>');
+        $("#produtoModalImagePath").prependTo(".capa-lanche");
+
+        // Inserir Título
+        $(".modal-title .product-title").prependTo(".panel-body .text-justify");
     })
 });
 
