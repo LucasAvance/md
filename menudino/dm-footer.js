@@ -119,7 +119,7 @@ $(".modal-header").append('<span style="display:none">Funcionou</span>');
 });
 
 
-$(document).ajaxComplete(function () {
+$("#itemModal").ajaxComplete(function () {
     alert('Teste Funcionou');
 });
 
