@@ -118,7 +118,7 @@ $("#itemModal").on("show.bs.modal", function (n) {
         console.log('Teste Funcioando');
 
         // Inserir Título
-        $(".modal-title").prependTo(".panel-body");
+        $("#itemModal .modal-title").prependTo(".panel-body");
 
         // Remover Título e Colocar Menu Superior
         $(".modal-header").empty().append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
