@@ -120,11 +120,11 @@ $(".modal-header").append('<span style="display:none">Funcionou</span>');
 
 
 $("#itemModal").on("show.bs.modal", function (n) {
-	$( document ).ajaxComplete(function() {
-    	console.log('Teste Funcionou AEEOOAEOOA');
+    $(document).ajaxComplete(function () {
+        console.log('Teste Funcionou AEEOOAEOOA');
 
-$(".modal-header").append('<span style="display:none">Funcionou</span>');
-})
+        $(".modal-header").prepend('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
+    })
 });
 
 
