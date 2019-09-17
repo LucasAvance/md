@@ -116,7 +116,7 @@ $(".label-aberto").clone().prependTo(".status_restaurante");
 $("#itemModal").on("show.bs.modal", function () {
     $(document).ajaxComplete(function () {
         console.log('Teste Funcioando');
-/*
+
         // Inserir Título
         $("#itemModal .modal-title").prependTo(".panel-body");
 
@@ -126,7 +126,6 @@ $("#itemModal").on("show.bs.modal", function () {
         // Inserir Imagem no topo
         $(".modal-body").prepend('<div class="capa-lanche"></div>');
         $("#produtoModalImagePath").prependTo(".capa-lanche");
-*/
 
     });
 });
