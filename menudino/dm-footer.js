@@ -124,7 +124,7 @@ $("#itemModal").on("show.bs.modal", function () {
         $(".modal-header").append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
 
         // Inserir Imagem no topo
-        $(".modal-body").empty().prepend('<div class="capa-lanche"></div>');
+        $(".modal-body").prepend('<div class="capa-lanche"></div>');
         $("#produtoModalImagePath").clone().prependTo(".capa-lanche");
 
     });
