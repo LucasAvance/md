@@ -114,6 +114,7 @@ $(".label-aberto").clone().prependTo(".status_restaurante");
 /*Inserção de Conteúdo - Header */
 
 $("#itemModal").on("show.bs.modal", function () {
+    $("#itemModal .modal-content").html("");
     $(document).ajaxComplete(function () {
         console.log('Teste Funcioando');
 /*
