@@ -131,7 +131,14 @@ $("#itemModal").on("show.bs.modal", function (n) {
     });
 });
 
-
+$(document).on("touchend", ".modal-content", function (n) {
+    $(".modal-header").empty();
+    $(".modal-body").empty();
+    $(".modal-footer").empty();
+        i = n.originalEvent.changedTouches[0].screenX;
+        u = n.originalEvent.changedTouches[0].screenY;
+        Math.abs(i - t) > Math.abs(u - r) && Math.abs(u - r) < 50 && Math.abs(i - t) > 50 && (i > t ? $(this).parents(".modal").modal("hide") : i < t)
+});
 
 
 /* Abrir Link de Compra */
