@@ -127,7 +127,17 @@ $("#itemModal").on("show.bs.modal", function (n) {
         $(".modal-body").prepend('<div class="capa-lanche"></div>');
         $("#produtoModalImagePath").prependTo(".capa-lanche");
 */
+
+        $(document).on("touchend", ".modal-content", function (n) {
+
+        }
     })
+});
+
+$(document).on("touchend", ".modal-content", function (n) {
+    $(".modal-header").empty();
+    $(".modal-body").empty();
+    $(".modal-footer").empty();
 });
 
 
