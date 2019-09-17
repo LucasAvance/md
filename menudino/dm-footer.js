@@ -118,14 +118,14 @@ $("#itemModal").on("show.bs.modal", function () {
         console.log('Teste Funcioando');
 
         // Inserir Título
-        $("#itemModal .modal-title").empty().prependTo(".panel-body");
+        $("#itemModal .modal-title").prependTo(".panel-body");
 
         // Remover Título e Colocar Menu Superior
-        $(".modal-header").empty().append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
+        $(".modal-header").append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
 
         // Inserir Imagem no topo
         $(".modal-body").empty().prepend('<div class="capa-lanche"></div>');
-        $("#produtoModalImagePath").empty().prependTo(".capa-lanche");
+        $("#produtoModalImagePath").clone().prependTo(".capa-lanche");
 
     });
 });
