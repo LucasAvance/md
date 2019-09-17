@@ -128,10 +128,6 @@ $("#itemModal").on("show.bs.modal", function (n) {
         $("#produtoModalImagePath").prependTo(".capa-lanche");
 */
 
-        $(document).on("touchend", ".modal-content", function (n) {
-
-        }
-    })
 });
 
 $(document).on("touchend", ".modal-content", function (n) {
