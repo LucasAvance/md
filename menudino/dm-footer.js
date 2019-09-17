@@ -131,10 +131,10 @@ $("#itemModal").on("show.bs.modal", function () {
     });
 });
 
+
+/* Limpeza de Conteúdo do Modal */
 $(".modal").on("hidden.bs.modal", function () {
-    $(".modal-content").empty();
-    $(".modal-body").empty();
-    $(".modal-footer").empty();
+    $("#itemModal .modal-content").empty();
 });
 
 
