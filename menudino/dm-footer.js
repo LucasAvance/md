@@ -131,11 +131,7 @@ $("#itemModal").on("show.bs.modal", function (n) {
     });
 });
 
-$(document).on("touchend", ".modal-content", function (n) {
-    $(".modal-header").empty();
-    $(".modal-body").empty();
-    $(".modal-footer").empty();
-});
+
 
 
 /* Abrir Link de Compra */
