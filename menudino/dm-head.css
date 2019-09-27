@@ -313,7 +313,7 @@ h3 a {
     font-size: 20px
 }
 
-.modal-footer .input-quantidade {
+.modal-footer .form-group-qtd {
     border-radius: 4px;
     overflow: hidden;
 }
@@ -330,12 +330,15 @@ h3 a {
 .modal-footer .btn-minus {
     color: #ea1d2c;
     background: #fff;
+    border: 0;
+    border-radius: 0;
 }
 
 .modal-footer .form-quantidade {
     padding: 0;
     height: 45px;
     border: none;
+    border-radius: 0;
     margin: 0;
 }
 
