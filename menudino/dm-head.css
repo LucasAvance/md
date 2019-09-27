@@ -91,6 +91,15 @@ body,
     border: none;
 }
 
+
+/* ANIVERSÁRIO */
+.cardapio-header .inner {
+    background-image: url(menudino/images/promo-aniver.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 .cardapio-header address,
 .cardapio-header .fa.fa-clock-o,
 .cardapio-header .tempoEstimadoSelected,
