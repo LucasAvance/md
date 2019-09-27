@@ -352,13 +352,13 @@ h3 a {
     margin-bottom: 0;
 }
 
-.modal-footer .flex-item .mr{
+.modal-footer .flex-item.mr{
     width: 33.33333%;
     flex:none;
 }
 
 
-.modal-footer .flex-item .ml {
+.modal-footer .flex-item.ml {
     flex:none;
     width: 66.66667%;
 }
