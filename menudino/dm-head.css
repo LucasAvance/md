@@ -308,13 +308,18 @@ h3 a {
 }
 
 .modal-footer .btn {
-    font-weight: bold;
     background: #f47134;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .modal-footer .btn-lg {
-    font-size: 20px
+    font-size: 16x;
+    text-align: left;
+    height: 45px;
+}
+
+.modal-footer span.show {
+    float: right;
 }
 
 .modal-footer .form-group-qtd {
@@ -350,6 +355,10 @@ h3 a {
 
 .modal-footer .form-group {
     margin-bottom: 0;
+}
+
+.modal-footer br {
+    display: none;
 }
 
 .modal-footer .flex-item.mr{
