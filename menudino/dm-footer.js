@@ -148,4 +148,4 @@ $(".modal").on("hidden.bs.modal", function () {
 
 
 /* Inserção de Conteúdo - Body */
-$(".cardapio-header .inner h1").empty().append('Todos os lanches na com valor promocional, de <b>01/10</b> até <b>31/10</b>.');
+$(".cardapio-header .inner h1").empty().append('Todos os lanches com valor promocional, de <b>01/10</b> até <b>31/10</b>.');
