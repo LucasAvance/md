@@ -318,7 +318,7 @@ h3 a {
     overflow: hidden;
 }
 
-.modal-footer .btn-quantidade{
+.modal-footer #Quantidade{
     font-size: 10px;
     background: #fff;
     border: none;
@@ -329,6 +329,7 @@ h3 a {
 .modal-footer .btn-plus,
 .modal-footer .btn-minus {
     color: #ea1d2c;
+    background: #fff;
 }
 
 .modal-footer .form-quantidade {
