@@ -322,6 +322,10 @@ h3 a {
     float: right;
 }
 
+.modal-footer br {
+    display: none;
+}
+
 .modal-footer .form-group-qtd {
     border-radius: 4px;
     overflow: hidden;
@@ -355,10 +359,6 @@ h3 a {
 
 .modal-footer .form-group {
     margin-bottom: 0;
-}
-
-.modal-footer br {
-    display: none;
 }
 
 .modal-footer .flex-item.mr{
