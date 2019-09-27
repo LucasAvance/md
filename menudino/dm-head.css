@@ -363,6 +363,7 @@ h3 a {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0;
 }
 
 .modal-footer .flex-item.ml {
