@@ -319,7 +319,7 @@ h3 a {
 }
 
 .modal-footer #Quantidade{
-    font-size: 10px;
+    font-size: 16px;
     background: #fff;
     border: none;
     border-radius: 0;
@@ -328,6 +328,7 @@ h3 a {
 
 .modal-footer .btn-plus,
 .modal-footer .btn-minus {
+    font-size: 12px;
     color: #ea1d2c;
     background: #fff;
     border: 0;
