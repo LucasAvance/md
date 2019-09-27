@@ -250,6 +250,10 @@ h3 a {
     background: #fff;
 }
 
+.modal-footer {
+    text-align: center;
+}
+
 .btn-corpofechar-pedido {
     margin: 0;
     z-index: 1;
