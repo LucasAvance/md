@@ -100,6 +100,20 @@ body,
     background-position: top;
 }
 
+/* Texto de Aviso Se Necessário
+.cardapio-header h1 {
+    display: block !important;
+    font-style: normal;
+    width: 100%;
+    text-transform: unset;
+    letter-spacing: unset;
+    font-size: 18px;
+    font-weight: 100;
+    overflow: hidden;
+    text-overflow: unset;
+    white-space: unset;
+}*/
+
 .cardapio-header address,
 .cardapio-header .fa.fa-clock-o,
 .cardapio-header .tempoEstimadoSelected,
