@@ -228,14 +228,9 @@ h3 a {
     color: #50a773 !important;
 }
 
-.price::before {
-    content: 'R$ ';
-}
-
 
 /* Modal Lanche */
 
-/*
 .text-success {
     color: #00966A !important;
 }

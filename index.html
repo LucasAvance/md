@@ -777,7 +777,7 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
     </div>
 
     <!-- Modal Item -->
-    <div class="modal-mobile-full modal fade in" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalTitle" style="display: block; padding-left: 0px;">
+    <div class="modal-mobile-full modal fade in" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalTitle">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <form action="/pedido/cardapioitem/30c707b2-c8f1-41e0-944c-ac9d991e371e" data-ajax="true" data-ajax-begin="OnBeginAdd" data-ajax-method="POST" data-ajax-success="OnSuccessAdd" id="form0" method="post" novalidate="novalidate">
@@ -1108,6 +1108,7 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
             </div>
         </div>
     </div>
+
     <div class="modal-mobile-full2 modal fade" id="cepModal" tabindex="-1" role="dialog">
     </div>
 
@@ -1192,6 +1193,11 @@ maionese especial, milho, ervilha, palha, alface, tomate, hamb&#250;rguer de fra
     <script>
         /* Inserção de Conteúdo - Body */
         $(".modal-header").replaceWith('<div class="modal-header"><button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p></div>');
+
+
+        $("#testeModal").on("show.bs.modal", function (n) {
+            console.log('teste');
+        });
     </script>
     <script src="menudino/dm-footer.js"></script>
 </body>
