@@ -323,11 +323,12 @@ h3 a {
     background: #fff;
     border: none;
     border-radius: 0;
-    height: 45px;;
+    height: 45px;
 }
 
-.modal-footer .btn-plus,
-.modal-footer .btn-minus {
+.modal-footer .form-group-qtd  .btn-plus,
+.modal-footer .form-group-qtd .btn-minus {
+    height: 45px;
     font-size: 12px;
     color: #ea1d2c;
     background: #fff;
