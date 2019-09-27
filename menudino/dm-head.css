@@ -357,6 +357,13 @@ h3 a {
     flex:none;
 }
 
+.modal-footer .flex-item.ml,
+.modal-footer .flex-item.mr {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .modal-footer .flex-item.ml {
     flex:none;
