@@ -94,7 +94,7 @@ body,
 
 /* ANIVERSÁRIO */
 .cardapio-header .inner {
-    background-image: url(menudino/images/promo-aniver.png);
+    background-image: url("https://lucasavance.github.io/md/menudino/images/promo-aniver.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
