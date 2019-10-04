@@ -98,8 +98,6 @@ $(".cardapio-body").prepend('<ul class="dm-infos"><li><h3>Endereço para retirad
 $("#detalhesAtendimentoModal .bg-danger").prepend('<i class="fa fa-clock-o"></i>');
 
 
-/* Alteração de Localização - Endereço */
-$("address").clone().prependTo(".endereco");
 
 /* Alteração de Localização - Tempo Entrega */
 $(".tempoEstimadoSelected").clone().prependTo(".tempoentrega");
