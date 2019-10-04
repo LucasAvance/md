@@ -94,6 +94,8 @@ $("footer").prepend('<span><a href="https://deumatchburguer.com/">Deu Match&reg;
 /* Inserção de Conteúdo - Informações Restaurante */
 $(".cardapio-body").prepend('<ul class="dm-infos"><li><h3>Endereço para retirada<a class="endereco"></a></h3></li><li><h3>Tempo de Entrega<a href="#" data-toggle="modal" data-target="#detalhesAtendimentoModal"><i class="fa fa-clock-o"></i> <span class="tempoentrega"></span></a></h3></li></ul>');
 
+/* Inserção de Conteúdo - Informações Restaurante - Design */
+$("#detalhesAtendimentoModal .bg-danger").prepend('<i class="fa fa-clock-o"></i>');
 
 
 /* Alteração de Localização - Endereço */

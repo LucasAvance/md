@@ -425,6 +425,37 @@ h3 a {
     font-weight: 300;
 }
 
+/* Modal Info */
+#detalhesAtendimentoModal .modal-body {
+    padding: 10px;
+    text-align: center;
+}
+
+#detalhesAtendimentoModal .modal-title {
+    font-size: 1em;
+    font-weight: normal;
+    color: #717171;
+    font-family: "SulSans", sans-serif;
+}
+
+#detalhesAtendimentoModal .bg-danger {
+    content: 'teste';
+    color: #717171 !important;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(113, 113, 113, 0.1);
+    background-color: #f6f5f5;
+    margin-top: 15px;
+}
+
+#detalhesAtendimentoModal .bg-danger .fa {
+    font-size: 1.5em;
+    margin: 20px;
+    color: #b42b2b;
+    fill: #b42b2b;
+}
 
 /* Modal Promo */
 
