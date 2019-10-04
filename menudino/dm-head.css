@@ -76,6 +76,7 @@ body,
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
     border-radius: 10px;
     max-height: 200px;
 }
@@ -151,8 +152,9 @@ body,
 }
 
 .dm-infos h3 {
-    font-size: .7em;
+    font-size: 15px;
     color: #a6a6a6;
+    font-weight: 500 !important;
 }
 
 .dm-infos h3 a i,
