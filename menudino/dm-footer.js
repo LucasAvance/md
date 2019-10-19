@@ -111,29 +111,6 @@ $(".label-fechado").clone().prependTo(".status_restaurante");
 $(".label-aberto").clone().prependTo(".status_restaurante");
 
 
-/* Modal Lanches */
-
-/*Inserção de Conteúdo - Header */
-
-$("#itemModal").on("show.bs.modal", function () {
-    $("#itemModal .modal-content").html("");
-        console.log('Teste Funcioando');
-    $(document).ajaxComplete(function () {
-
-/*
-        // Inserir Título
-        $("#itemModal .modal-title").prependTo(".panel-body");
-
-        // Remover Título e Colocar Menu Superior
-        $(".modal-header").empty().append('<button type="button" class="btn btn-corpofechar-pedido" data-dismiss="modal"><i class="fa fa-arrow-left btn-fechar-pedido"></i></button><p class="pedido-titulo">Detalhes do Pedido</p>');
-
-        // Inserir Imagem no topo
-        $(".modal-body").prepend('<div class="capa-lanche"></div>');
-       $("#produtoModalImagePath").prependTo(".capa-lanche");
-*/
-    });
-});
-
 
 
 /* Limpeza de Conteúdo do Modal */
