@@ -113,7 +113,7 @@ $(".label-aberto").clone().prependTo(".status_restaurante");
 
 /* Modal Lanches */
 
-/*Inserção de Conteúdo - Header
+/*Inserção de Conteúdo - Header */
 
 $("#itemModal").on("show.bs.modal", function () {
     $("#itemModal .modal-content").html("");
@@ -129,11 +129,11 @@ $("#itemModal").on("show.bs.modal", function () {
 
         // Inserir Imagem no topo
         $(".modal-body").prepend('<div class="capa-lanche"></div>');
-        $("#produtoModalImagePath").prependTo(".capa-lanche");
-
+       $("#produtoModalImagePath").prependTo(".capa-lanche");
+*/
     });
 });
-*/
+
 
 
 /* Limpeza de Conteúdo do Modal */
