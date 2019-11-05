@@ -127,5 +127,5 @@ $(".modal").on("hidden.bs.modal", function () {
 
 
 /* ANIVERSÁRIO */
-$(".cardapio-header .inner h1").empty().append('Todos os lanches com valor promocional, de <b>01/10</b> até <b>31/10</b>.');
+$(".cardapio-header .inner h1").empty().append('Todos os lanches com valor de Black Friday, de <b>01/11</b> até <b>30/11</b>.');
 
